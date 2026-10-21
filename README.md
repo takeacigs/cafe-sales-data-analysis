@@ -86,6 +86,3 @@ cafe-sales-data-analysis/
    ```bash
    streamlit run app.py
    ```
-
-## Status Proyek
-Dalam pengerjaan.
