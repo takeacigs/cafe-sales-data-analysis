@@ -1,13 +1,15 @@
 # Analisis Dirty Cafe Sales
 
 ## Deskripsi Proyek
-Proyek ini merupakan analisis data penjualan kafe menggunakan Python untuk memahami pola transaksi, mengidentifikasi produk yang paling banyak terjual, mengetahui metode pembayaran yang sering digunakan, serta mengevaluasi kualitas data sebelum dilakukan analisis lebih lanjut.
+Proyek ini merupakan analisis data penjualan kafe menggunakan Python. Analisis dilakukan untuk memahami pola transaksi, mengidentifikasi produk dengan total penjualan tertinggi, mengetahui metode pembayaran yang paling banyak digunakan, serta mengevaluasi kualitas data sebelum dilakukan analisis lebih lanjut.
+
+Proyek ini juga dilengkapi dengan dashboard interaktif menggunakan Streamlit untuk menyajikan hasil analisis secara lebih mudah dipahami.
 
 ## Tujuan Analisis
-1. Mengetahui produk yang paling banyak terjual.
-2. Mengidentifikasi tren penjualan berdasarkan waktu transaksi.
-3. Mengetahui metode pembayaran yang paling sering digunakan pelanggan.
-4. Mengevaluasi kualitas data penjualan.
+1. Mengetahui produk dengan total penjualan tertinggi.
+2. Mengidentifikasi tren jumlah transaksi setiap bulan selama tahun 2023.
+3. Mengetahui metode pembayaran yang paling banyak digunakan berdasarkan data yang tersedia.
+4. Mengevaluasi dan mempersiapkan kualitas data penjualan sebelum analisis.
 
 ## Pertanyaan Bisnis
 1. Produk apa yang memiliki total penjualan tertinggi?
@@ -17,16 +19,20 @@ Proyek ini merupakan analisis data penjualan kafe menggunakan Python untuk memah
 ## Dataset
 - **Nama:** Dirty Cafe Sales
 - **Format:** CSV
-- **Sumber:** [Cantumkan tautan sumber dataset asli]
-- **Deskripsi:** Dataset berisi catatan transaksi penjualan kafe yang akan diperiksa dan dipersiapkan sebelum dianalisis.
+- **Jumlah data:** 10.000 baris dan 8 kolom
+- **Sumber:** [Cafe Sales - Dirty Data for Cleaning Training](https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training)
+- **File dataset asli:** `data/dirty_cafe_sales.csv`
+- **File dataset hasil persiapan:** `data/processed/cafe_sales_clean.csv`
+
+Dataset berisi catatan transaksi penjualan kafe, meliputi ID transaksi, produk, kuantitas, harga per unit, total pengeluaran, metode pembayaran, lokasi transaksi, dan tanggal transaksi.
 
 ## Tools dan Teknologi
 - Python
 - Pandas
 - Matplotlib
-- Seaborn
-- Jupyter Notebook (`.ipynb`)
+- Jupyter Notebook
 - Visual Studio Code
+- Streamlit
 - Git dan GitHub
 
 ## Tahapan Pengerjaan
@@ -34,19 +40,52 @@ Proyek ini merupakan analisis data penjualan kafe menggunakan Python untuk memah
 2. Data Understanding
 3. Data Preparation
 4. Exploratory Data Analysis (EDA)
-5. Data Visualization
-6. Insight dan Rekomendasi
+5. Business Insights dan Rekomendasi
+6. Pembuatan Dashboard Interaktif
+
+## Hasil Analisis
+Berdasarkan data yang tersedia:
+- **Produk dengan total penjualan tertinggi:** Salad, sebesar 17.320.
+- **Bulan dengan jumlah transaksi tertinggi:** Oktober 2023, sebanyak 838 transaksi.
+- **Bulan dengan jumlah transaksi terendah:** Februari 2023, sebanyak 727 transaksi.
+- **Metode pembayaran yang paling banyak tercatat:** Digital Wallet, sebanyak 2.291 transaksi.
+
+Hasil tersebut didasarkan pada data yang tersedia setelah pemeriksaan dan persiapan data. Nilai yang kosong dapat memengaruhi hasil analisis pada kolom tertentu.
 
 ## Struktur Repository
 ```text
-analisis-dirty-cafe-sales/
+cafe-sales-data-analysis/
 ├── data/
+│   ├── dirty_cafe_sales.csv
+│   └── processed/
+│       └── cafe_sales_clean.csv
 ├── notebooks/
-├── visualizations/
-├── laporan/
+│   ├── 01_data_understanding.ipynb
+│   ├── 02_data_preparation.ipynb
+│   ├── 03_exploratory_data_analysis.ipynb
+│   └── 04_business_insights.ipynb
+├── app.py
+├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
+
+**Sumber:** [Cantumkan tautan sumber dataset asli]
+
+## Cara Menjalankan Dashboard
+1. Pastikan Python sudah terpasang.
+2. Buka terminal pada folder utama proyek.
+3. Instal dependensi dengan perintah:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Jalankan dashboard dengan perintah:
+
+   ```bash
+   streamlit run app.py
+   ```
 
 ## Status Proyek
 Dalam pengerjaan.
