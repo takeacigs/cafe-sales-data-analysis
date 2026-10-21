@@ -10,9 +10,9 @@ Proyek ini merupakan analisis data penjualan kafe menggunakan Python untuk memah
 4. Mengevaluasi kualitas data penjualan.
 
 ## Pertanyaan Bisnis
-1. Produk apa yang paling banyak terjual?
-2. Bagaimana tren penjualan berdasarkan waktu transaksi?
-3. Metode pembayaran apa yang paling banyak digunakan pelanggan?
+1. Produk apa yang memiliki total penjualan tertinggi?
+2. Bagaimana tren jumlah transaksi setiap bulan selama tahun 2023?
+3. Metode pembayaran apa yang paling banyak digunakan berdasarkan data yang tersedia?
 
 ## Dataset
 - **Nama:** Dirty Cafe Sales
