@@ -70,8 +70,6 @@ cafe-sales-data-analysis/
 └── .gitignore
 ```
 
-**Sumber:** [Cantumkan tautan sumber dataset asli]
-
 ## Cara Menjalankan Dashboard
 1. Pastikan Python sudah terpasang.
 2. Buka terminal pada folder utama proyek.
